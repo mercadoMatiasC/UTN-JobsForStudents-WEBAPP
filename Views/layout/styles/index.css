@@ -1,0 +1,298 @@
+*{
+    font-family: 'Arial Unicode MS';
+}
+
+.simplescrollup__button {
+    background-color: rgba(0,0,0,0.4);
+    padding: 15px;
+    border-radius: 50%;
+	position: fixed;
+	bottom: 3rem;
+	right: 3rem;
+	transition: 1s all;
+	z-index: 10000;
+}
+
+.simplescrollup__button--show {
+	transform: translateX(0px);
+}
+.simplescrollup__button--hide {
+	transform: translateX(500px);
+}
+
+body{
+    margin: 0px;
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-ctccBxMhRVs%2FTjG-w31qkXI%2FAAAAAAAABhI%2F4U-7rIG7FYc%2Fs1600%2Flight%2Bblue%2Babstract%2Bbackground%2B1.jpg&f=1&nofb=1');
+    background-size: cover;
+    /*background-image: linear-gradient(120deg, rgb(105, 105, 105), rgb(218, 218, 218), rgb(218, 218, 218));*/
+}
+
+.container{
+    min-height: 58vh ;
+    position:relative;
+    margin-left: 0px;
+    margin-right: 30%;
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#buttonSubmit{
+    background-color: #1a6bbc; 
+    border: 0px; 
+    width: 100px;
+}
+
+#buttonSubmit:hover{
+    background-color: #094077;
+}
+
+#link{
+    color: white;
+    text-decoration: none;
+}
+
+/* -- HEADER -- */
+#header{
+    width: 100%;
+    background-image: linear-gradient(to right, #095373, #33b8da);
+    height: 90px;
+}
+
+select {
+    display: block;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    color: #444;
+    line-height: 1.3;
+    padding: .2em;
+    width: 180px;
+    max-width: 100%; 
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.03);
+    border-radius: .3em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+      linear-gradient(to bottom, #ffffff 0%,#f7f7f7 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+}
+
+select::-ms-expand {
+ display: none;
+}
+
+select:hover {
+ border-color: #888;
+}
+
+select:focus {
+ border-color: #aaa;
+ box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+ box-shadow: 0 0 0 3px -moz-mac-focusring;
+ color: #222; 
+ outline: none;
+}
+
+.row{
+    line-height: 0.2;
+    display: flex;
+}
+  
+.column{
+    padding-right: 20px;
+}
+
+#footerColumn{
+    margin-left: 5vh;
+}
+
+#tiltedLogo{
+    margin: 5px 0px 0px 10vh;
+    width: 80px;
+    transition: all 0.5s;
+}
+
+#tiltedLogo:hover{
+    margin: 5px 0px 0px 10vh;
+    width: 85px;
+    transition: all 0.5s;
+}
+
+#vLine{
+    border-left: 1.5px solid white;
+    height: 40px;
+    margin-top: 35px;
+}
+
+#jfsText{
+    margin-top: 55px;
+    padding: 0px;
+    color: white;
+    font-weight: 100;
+    font-size: 17px;
+}
+
+/* -- LOG IN FORM -- */
+
+#loginForm{
+    font-size: 18px;
+    width: 50%;
+    height: 300px;
+    margin-top: 10vh;
+    padding: 200px;
+}
+
+#newHereText{
+    padding: 5px; background-color: rgba(0,0,0,0.5); 
+    border-radius: 3px; 
+    width: 30vh; 
+}
+
+.inputText{
+    border-radius: 5px;
+    border: 1px solid darkgrey;
+    height: 40px;
+    width: 100%;
+}
+
+/* -- NAV BAR -- */
+#navbar{
+    width: 100%;
+    background-image: url('../../imgs/nav-barbg.jpg');
+    background-size: cover;
+    height: 40px;
+}
+
+ul{ 
+    line-height: 36px;
+    height: 40px;
+    white-space:nowrap; 
+    width: 100%;
+} 
+
+li{
+    color: #404040;
+    padding: 9px;
+    display:inline; 
+    transition: all 0.4s;
+}      
+
+li:hover{
+    font-size: 18px;
+    background-color: rgba(0,0,0,0);
+    transition: all 0.4s;
+}
+
+input{
+    border-radius: 3px;
+    border: 0.5px solid darkgray;
+}
+
+input[type="radio"]{
+    width: 30px;
+    padding: 20px;
+}
+
+input[type="date"]{
+    padding: 4px;
+}
+
+#notificationBell{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #404040;
+}
+
+/* -- TABLE -- */
+#studentsTable{
+    margin-top: 20px;
+}
+
+#AdministratorsTable{
+    margin-top: 20px;
+}
+
+table{
+    background-image: url('../../imgs/tablebg.jpg');
+    background-size: cover;
+}
+
+th{
+    margin-bottom: 20px;
+    color: rgb(211, 211, 211);
+    padding: 10px 100px;
+    background-color: #1f1f1f;
+}
+
+#hometh{
+    text-align: left; 
+    background-image: linear-gradient(to right, rgb(40,40,40), rgb(40,40,40), rgb(5, 5, 5)); 
+    border-radius: 0px;
+    padding: 13px;
+    font-size: 22px;
+}
+
+td{
+    width: 50%;
+    padding: 15px 20px 10px 20px;
+}
+
+tr{
+    background-color: rgba(255,255,255,0.6);
+}
+
+#tableIndex{
+    background-image: linear-gradient(to right, rgb(40,40,40), rgb(40,40,40), rgb(5, 5, 5)); 
+
+    color: white;
+}
+
+#errorMessage{
+    padding: 2px;
+    border-radius: 3px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.671);
+    margin-top: 20px; 
+    color: rgb(224, 70, 70);
+    font-weight: bold;
+}
+
+
+/* -- FOOTER -- */
+#footer{
+    clear: both;
+    margin-top: 20px;
+    color: white;
+    position: relative;
+    bottom: 0;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 250px;
+    background-image: linear-gradient(to top, #0d0d0d, #1f1f1f, #1f1f1f);
+}
+
+#tiltedFooterLogo{
+    float: right;
+    padding: 8px;
+    padding-right: 30px;
+    width: 320px;
+    opacity: 0.1;
+}
+
+#copyright{
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    color: gray;
+}
